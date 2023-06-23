@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+
+
+@font-face {
+    font-family: 'digital-7';
+    src: url(/digitalclock/digital-7/digital-7.ttf);
+}
+
+body {
+    background-color: #273c75;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #fff;
+    height: 400px;
+    width: 400px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+
+}
+
+.frame {
+
+    display: flex;
+    gap: 3px;
+}
+
+h3 {
+    font-weight: 500px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: #273c75;
+}
+
+.hrs,
+.min,
+.sec,
+.ms,
+.colon {
+    width: 50px;
+    height: 50px;
+    font-family: 'digital-7';
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+.colon {
+    height: 50px;
+    width: 10px;
+}
+
+.buttons {
+    margin-top: 25px;
+
+}
+
+.buttons button {
+    background-color: ;
+    border: none;
+    padding: 5px 20px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.start {
+    background-color: green;
+
+}
+
+.reset {
+    background-color: #273c75;
+}
+
+.stop {
+    background-color: red;
+}
+
+.start-active,
+.stop-active {
+    pointer-events: none;
+    opacity: 0.5;
+}
